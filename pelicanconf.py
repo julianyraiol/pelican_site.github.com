@@ -10,8 +10,7 @@ PATH = 'content'
 
 TIMEZONE = 'America/Manaus'
 
-OUTPUT_PATH = 'output'
-THEME = 'output/themes/pyladies'
+THEME_STATIC_DIR = 'pyladies'
 
 DEFAULT_LANG = 'pt-br'
 
