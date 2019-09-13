@@ -4,15 +4,13 @@ from __future__ import unicode_literals
 
 AUTHOR = 'pyladiesmanaus'
 SITENAME = 'PyLadies Manaus'
-#SITEURL = 'http://localhost:8000/'
+SITEURL = ''
 
 PATH = 'content'
 
 TIMEZONE = 'America/Manaus'
 
-THEME_STATIC_DIR = 'pyladies'
-
-DEFAULT_LANG = 'pt-br'
+DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -35,10 +33,3 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-
-ARTICLE_PATHS = ['blog']
-ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
-ARTICLE_URL = '{date:%Y}/{slug}.html'
-
-PAGE_URL = '{slug}.html'
-PAGE_SAVE_AS = PAGE_URL
