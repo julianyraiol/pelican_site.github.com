@@ -1,0 +1,24 @@
+title: PyLadies Manaus
+email: manaus@pyladies.com
+description: Mulheres participantes ativas e líderes da comunidade de código aberto Python!
+author: PyLadies Manaus
+baseurl: ""
+url: "manaus.pyladies.com"
+
+# Social Profiles
+twitter_username: pyladiesmanaus
+github_username: pyladiesmanaus
+facebook_username: pyladiesmanaus
+linkedin_username: pyladiesmanaus
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics: UA-114302793-1 # out your google-analytics code
+
+# Build settings
+markdown: kramdown
+paginate: 5
+paginate_path: "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
