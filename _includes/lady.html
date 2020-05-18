@@ -1,0 +1,35 @@
+<div class="square-image"></div>
+<div class="details">
+  <div style="color: #41f8fe;" class="name">{{ include.lady.name }}</div>
+  <div class="position">
+    {{ include.lady.title }}
+    <span
+      style="
+        float: right !important;
+        background: white;
+        border-radius: 5px;
+        padding: 5px;
+      "
+    >
+      {% if include.lady.twitter %}
+      <a href="https://twitter.com/{{ include.lady.twitter }}" target="_blank"
+        ><i class="fab fa-twitter-square"></i
+      ></a>
+      {% endif %} {% if include.lady.facebook %}
+      <a href="https://fb.com/{{ include.lady.facebook }}" target="_blank"
+        ><i class="fab fa-facebook-square"></i
+      ></a>
+      {% endif %} {% if include.lady.linkedin %}
+      <a
+        href="https://www.linkedin.com/in/{{ include.lady.linkedin }}"
+        target="_blank"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      {% endif %} {% if include.lady.website %}
+      <a href="https://{{ include.lady.website }}" target="_blank"
+        ><i class="fas fa-globe-americas"></i
+      ></a>
+      {% endif %}
+    </span>
+  </div>
+</div>
