@@ -2,8 +2,8 @@ title: PyLadies Manaus
 email: manaus@pyladies.com
 description: Mulheres participantes ativas e líderes da comunidade de código aberto Python!
 author: PyLadies Manaus
-baseurl: "pyladiesmanaus/"
-url: "manaus.pyladies.com"
+baseurl: ""
+url: "pyladiesmanaus.github.io"
 
 # Social Profiles
 twitter_username: pyladiesmanaus
