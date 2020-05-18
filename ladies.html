@@ -1,26 +1,69 @@
 ---
 layout: page
-title: Ladies
+title: Sobre
+description: Pés, para que os quero, se tenho asas para voar? - Frida Kahlo
 background: "/img/bg-about.jpg"
 ---
 
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam ut
-  perspiciatis, repudiandae nulla animi iste vel, praesentium repellendus
-  molestias aliquid consequatur, earum rem qui error voluptates eius enim
-  consequuntur!
-</p>
+<div id="ladies">
+  <div class="container">
+    <div class="row">
+      {% for lady in site.data.ladies %}
 
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex alias, earum
-  consectetur quia natus ducimus voluptate explicabo, hic porro reprehenderit,
-  quasi? Tenetur ipsum distinctio laboriosam perspiciatis officiis dolore,
-  architecto id.
-</p>
+      <div class="col-md-4 text-center">
+        <span class=""
+          ><img
+            class="img-ladies rounded-circle"
+            src="{{ lady.img_path }}"
+            alt="{{ lady.name }}"
+        /></span>
+        <h3>{{ lady.name }}</h3>
+        <ul class="icons">
+          {% if lady.github %}
+          <li class="list-inline-item">
+            <a href="https://github.com/{{ lady.github }}">
+              <span class="fa-stack fa-xs">
+                <i class="fab fa-github fa-stack-1x icon-lady"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %} {% if lady.twitter %}
+          <li class="list-inline-item">
+            <a href="https://twitter.com/{{ lady.twitter }}">
+              <span class="fa-stack fa-xs">
+                <i class="fab fa-twitter fa-stack-1x icon-lady"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %} {% if lady.linkedin %}
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/{{ lady.linkedin }}">
+              <span class="fa-stack fa-xs">
+                <i class="fab fa-linkedin fa-stack-1x icon-lady"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %} {% if lady.facebook %}
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/{{ lady.facebook }}">
+              <span class="fa-stack fa-xs">
+                <i class="fab fa-facebook fa-stack-1x icon-lady"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %} {% if lady.instagram %}
+          <li class="list-inline-item">
+            <a href="https://instagram.com/{{ lady.instagram }}">
+              <span class="fa-stack fa-xs">
+                <i class="fab fa-instagram fa-stack-1x icon-lady"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
 
-<p class="mb-5">
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam inventore
-  aspernatur repellendus incidunt adipisci modi voluptates recusandae iste
-  eligendi, repudiandae corporis quod aut, optio! Explicabo quaerat unde
-  voluptatem! Itaque, eum!
-</p>
+      {% endfor %}
+    </div>
+  </div>
+</div>
