@@ -14,7 +14,7 @@ background: "/img/bg-about.jpg"
         <span class=""
           ><img
             class="img-ladies rounded-circle"
-            src="{{ lady.img_path }}"
+            src="{{ lady.img_path | relative_url }}"
             alt="{{ lady.name }}"
         /></span>
         <h3>{{ lady.name }}</h3>
