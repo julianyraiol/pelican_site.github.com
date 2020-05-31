@@ -1,35 +1,65 @@
-<div class="square-image"></div>
-<div class="details">
-  <div style="color: #41f8fe;" class="name">{{ include.lady.name }}</div>
-  <div class="position">
-    {{ include.lady.title }}
-    <span
-      style="
-        float: right !important;
-        background: white;
-        border-radius: 5px;
-        padding: 5px;
-      "
-    >
-      {% if include.lady.twitter %}
-      <a href="https://twitter.com/{{ include.lady.twitter }}" target="_blank"
-        ><i class="fab fa-twitter-square"></i
-      ></a>
-      {% endif %} {% if include.lady.facebook %}
-      <a href="https://fb.com/{{ include.lady.facebook }}" target="_blank"
-        ><i class="fab fa-facebook-square"></i
-      ></a>
-      {% endif %} {% if include.lady.linkedin %}
-      <a
-        href="https://www.linkedin.com/in/{{ include.lady.linkedin }}"
-        target="_blank"
-        ><i class="fab fa-linkedin"></i
-      ></a>
-      {% endif %} {% if include.lady.website %}
-      <a href="https://{{ include.lady.website }}" target="_blank"
-        ><i class="fas fa-globe-americas"></i
-      ></a>
-      {% endif %}
-    </span>
+<div id="ladies">
+  <h2 class="text-center">Ladies</h2>
+  <br />
+
+  <div class="container">
+    <div class="row">
+      {% for lady in site.data.ladies %}
+
+      <div class="col-md-4 text-center">
+        <span class=""
+          ><img
+            class="img-ladies rounded-circle"
+            src="{{ lady.img_path | relative_url }}"
+            alt="{{ lady.name }}"
+        /></span>
+        <h3>{{ lady.name }}</h3>
+        <ul class="icons">
+          {% if lady.github %}
+          <li class="list-inline-item">
+            <a href="https://github.com/{{ lady.github }}">
+              <span class="fa-stack fa-xs">
+                <i class="fab fa-github fa-stack-1x icon-lady"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %} {% if lady.twitter %}
+          <li class="list-inline-item">
+            <a href="https://twitter.com/{{ lady.twitter }}">
+              <span class="fa-stack fa-xs">
+                <i class="fab fa-twitter fa-stack-1x icon-lady"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %} {% if lady.linkedin %}
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/{{ lady.linkedin }}">
+              <span class="fa-stack fa-xs">
+                <i class="fab fa-linkedin fa-stack-1x icon-lady"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %} {% if lady.facebook %}
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/{{ lady.facebook }}">
+              <span class="fa-stack fa-xs">
+                <i class="fab fa-facebook fa-stack-1x icon-lady"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %} {% if lady.instagram %}
+          <li class="list-inline-item">
+            <a href="https://instagram.com/{{ lady.instagram }}">
+              <span class="fa-stack fa-xs">
+                <i class="fab fa-instagram fa-stack-1x icon-lady"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      {% endfor %}
+    </div>
   </div>
 </div>
