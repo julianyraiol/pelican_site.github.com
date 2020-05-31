@@ -1,24 +1,39 @@
-- name: Juliany Raiol
-  img_path: /img/ladies/juliany.jpeg
-  github: julianyraiol
-  twitter: julianyraiol
-  linkedin: julianyraiol
-  instagram: juliany.raiol
+- name: Alice Adativa
+  img_path: /img/ladies/alice.jpeg
+  github: aliceadativa
+  linkedin: alice-adativa
+  
+- name: Giovana de Lucca
+  img_path: /img/ladies/giovana.jpeg
+  github: giovanadelucca
+  linkedin: giovanadelucca
+  #instagram: giovanadelucca
 
 - name: Juliany Raiol
   img_path: /img/ladies/juliany.jpeg
   github: julianyraiol
   twitter: julianyraiol
   linkedin: julianyraiol
+  #instagram: juliany.raiol
 
-- name: Juliany Raiol
-  img_path: /img/ladies/juliany.jpeg
-  github: julianyraiol
-  twitter: julianyraiol
-  linkedin: julianyraiol
+- name: Leticia Magalhães
+  img_path: /img/ladies/leticia_magalhaes.jpeg
+  github: ledizia
+  linkedin: leticia-magalhães-ab7338185
 
-- name: Juliany Raiol
-  img_path: /img/ladies/juliany.jpeg
-  github: julianyraiol
-  twitter: julianyraiol
-  linkedin: julianyraiol
+- name: Letícia Passos
+  img_path: /img/ladies/leticia_passos.jpeg
+  github: theletsteps
+  linkedin: leticiapassos
+
+- name: Nicoli Araújo
+  img_path: /img/ladies/nicoli.jpeg
+  github: nicoliaraujo
+  linkedin: nicoli-a77545ab
+
+- name: Rafaela Sousa
+  img_path: /img/ladies/rafaela.jpeg
+  github: rafaelaprm
+  twitter: rafaelaprm
+  linkedin: rafaelaprm
+  #instagram: rafaelaprm
