@@ -1,0 +1,30 @@
+<!--&lt;!&ndash; Download Section &ndash;&gt;-->
+
+<div id="eventos" class="eventos">
+  <h2 class="text-center">Últimas ações</h2>
+  <br />
+  <div class="row">
+    {% for action in site.data.actions %}
+
+    <div class="col-md-4 text-center">
+      <span class=""
+        ><img
+          class="img-post"
+          src="{{ action.img_path | relative_url }}"
+          alt="{{ action.name }}"
+      /></span>
+
+      <div class="col-md-12 text-center">
+        <h3>{{ action.name}}</h3>
+        <p>{{action.date}}</p>
+      </div>
+
+      <div class="col-md-12 text-center">
+        <a href="{{ action.more_info }}" class="btn btn-default btn-saibamais"
+          >Saiba mais</a
+        >
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

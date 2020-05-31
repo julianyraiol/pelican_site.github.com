@@ -37,3 +37,12 @@ ul.icons {
   list-style: none;
   padding-left: 0;
 }
+
+.img-post {
+  width: 100%;
+}
+
+.btn-saibamais {
+  color: white;
+  background-color: #f361b9b0;
+}
